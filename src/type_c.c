@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"../include/printf.h"
+#include "../include/libft.h"
 
 void			type_c(va_list *ap, t_data *data)
 {

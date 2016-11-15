@@ -6,11 +6,11 @@
 /*   By: fhenry <fhenry@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/14 17:25:19 by fhenry            #+#    #+#             */
-/*   Updated: 2016/09/30 22:08:45 by fhenry           ###   ########.fr       */
+/*   Updated: 2016/11/15 18:20:06 by fhenry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"../include/printf.h"
+#include "../include/libft.h"
 
 BOOL			ft_is_c_size(char c)
 {

@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf.h                                           :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fhenry <fhenry@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/14 17:04:30 by fhenry            #+#    #+#             */
-/*   Updated: 2016/11/15 14:20:29 by fhenry           ###   ########.fr       */
+/*   Updated: 2016/11/15 18:33:44 by fhenry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#ifndef LIBFT_H
+# define LIBFT_H
 
 # include <stdarg.h>
 # include <stdlib.h>
@@ -68,7 +68,6 @@
 # define MIN(x, y)	(x < y) ? x : y
 # define BUFF_SIZE	11000
 
-
 typedef struct		s_lst
 {
 	int				fd;
@@ -114,6 +113,7 @@ typedef struct		s_data
 **					PERSO
 */
 
+void				ft_free_tab(char **tab);
 char				**expand_tab_c(char **src, char *string);
 int					*expand_tab_i(int *src, int old_len, int value);
 
@@ -134,7 +134,6 @@ void				ft_str_capitalizer(char **str);
 void				add_c_to_string(char **string, char c);
 void				del_c_to_string(char **string, char c);
 BOOL				ft_strsrch(char *s1, char *s2);
-char				*ft_strnew(size_t size);
 char				*fill_with_c(size_t len, char c);
 void				width_max(t_data *data, char **tmp, char *ddi, char *sign);
 void				preci_max(t_data *data, char **tmp, char *ddi, char *sign);
@@ -148,32 +147,14 @@ void				type_p(va_list *ap, t_data *data);
 char				*ft_ull_itoa_base(ULL value, int base);
 char				*ft_itoa_base(long long value, int base);
 void				get_sign(t_data *data, char sign[1][2]);
-char				*ft_strstr(const char *s1, const char *s2);
 char				*ft_strrev(char *string);
 char				*ft_strnstr(const char *s1, const char *s2, size_t n);
-int					ft_strncmp(const char *s1, const char *s2, size_t n);
 size_t				ft_strlen_printf(const char *s);
 size_t				ft_strnlen(const char *s, size_t n);
-char				*ft_strjoin(char const *s1, char const *s2);
-char				*ft_strdup(const char *s);
-char				*ft_strcpy(char *dest, const char *src);
-char				*ft_strchr(const char *s, int c);
-char				*ft_strcat(char *dest, const char *src);
-void				ft_putstr(char const *s);
-void				*ft_memset(void *s, int c, size_t n);
-int					ft_memcmp(const void *s1, const void *s2, size_t n);
-void				*ft_memchr(const void *s, int c, size_t n);
-void				*ft_memalloc(size_t size);
-int					ft_isdigit(int c);
 int					ft_get_bytes(unsigned int c);
 char				*ft_fill_wstr(char *p, unsigned char byte, unsigned int c);
-void				ft_bzero(void *s, size_t n);
 int					ft_islower(int c);
-int					ft_strcmp(const char *s1, const char *s2);
-int					ft_atoi(const char *nptr);
 size_t				ft_wstrlen(wchar_t *s);
-char				*ft_strncpy(char *dest, const char *src, size_t n);
-void				*ft_memcpy(void *dest, const void *src, size_t n);
 char				*ft_strjoin_free(char *s1, char *s2, int free_malloc);
 void				init_struct(t_data *data);
 char				*ft_itoa_base_oux(long long value, int base);

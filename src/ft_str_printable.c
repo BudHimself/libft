@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"../include/printf.h"
+#include "../include/libft.h"
 
 int			ft_str_printable(char *str)
 {

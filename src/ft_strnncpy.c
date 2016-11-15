@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"../include/printf.h"
+#include "../include/libft.h"
 
 static int	ft_test(const char *s1, int start, int end)
 {

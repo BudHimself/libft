@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"../include/printf.h"
+#include "../include/libft.h"
 
 void			get_sign(t_data *data, char sign[1][2])
 {

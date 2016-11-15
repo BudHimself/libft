@@ -6,11 +6,11 @@
 /*   By: fhenry <fhenry@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/12 14:57:08 by fhenry            #+#    #+#             */
-/*   Updated: 2016/11/12 14:57:09 by fhenry           ###   ########.fr       */
+/*   Updated: 2016/11/15 18:18:48 by fhenry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/lem_in.h"
+#include "../include/libft.h"
 
 int				*expand_tab_i(int *src, int old_len, int value)
 {

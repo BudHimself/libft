@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"../include/printf.h"
+#include "../include/libft.h"
 
 char		*ft_strjoin_free(char *s1, char *s2, int free_malloc)
 {

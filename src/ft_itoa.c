@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"../include/printf.h"
+#include "../include/libft.h"
 
 static char		*ft_negative(char *integer, int count, int n)
 {

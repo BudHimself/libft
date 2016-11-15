@@ -6,11 +6,11 @@
 /*   By: fhenry <fhenry@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/14 17:05:01 by fhenry            #+#    #+#             */
-/*   Updated: 2016/09/30 22:08:33 by fhenry           ###   ########.fr       */
+/*   Updated: 2016/11/15 18:19:10 by fhenry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include			"../include/printf.h"
+#include "../include/libft.h"
 
 static void			free_data(t_data *data)
 {

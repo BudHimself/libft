@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include			"../include/printf.h"
+#include "../include/libft.h"
 
 static void			fill_str(t_data *data, char *s)
 {

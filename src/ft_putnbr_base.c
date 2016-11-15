@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include			"../include/printf.h"
+#include "../include/libft.h"
 
 void				ft_putnbr_base(unsigned int nbr, char *base)
 {

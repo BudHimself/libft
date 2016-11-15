@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"../include/printf.h"
+#include "../include/libft.h"
 
 static void		less_minus(t_data *data, char **tmp, char *ddi, char *sign)
 {

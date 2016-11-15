@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include			"../include/printf.h"
+#include "../include/libft.h"
 
 static void			get_path(char *format, t_data *data, int index)
 {

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include		"../include/printf.h"
+#include "../include/libft.h"
 
 void			len_arg_max(t_data *data, char **tmp, char *ddi, char *sign)
 {
