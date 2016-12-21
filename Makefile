@@ -6,7 +6,7 @@
 #    By: fhenry <fhenry@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/05/16 06:45:34 by fhenry            #+#    #+#              #
-#    Updated: 2016/11/15 14:13:03 by fhenry           ###   ########.fr        #
+#    Updated: 2016/11/18 16:40:08 by fhenry           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,10 +24,13 @@ INC_PATH = 	include/
 SRC_NAME =	add_c_to_string.c \
 			buff_string.c \
 			del_c_to_string.c \
+			expand_tab_i.c \
+			expand_tab_c.c \
 			fill_with_c.c \
 			ft_atoi.c \
 			ft_bzero.c \
 			ft_fill_wstring.c \
+			ft_free_tab.c \
 			ft_get_bytes.c \
 			ft_is_c_size.c \
 			ft_is_lower.c \
@@ -119,8 +122,7 @@ SRC_NAME =	add_c_to_string.c \
 			type_oux.c \
 			type_p.c \
 			type_s.c \
-			width_max.c \
-			expand_tab_i.c
+			width_max.c
 
 OBJ_NAME = 	$(SRC_NAME:.c=.o)
 

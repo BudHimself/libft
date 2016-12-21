@@ -6,30 +6,47 @@
 /*   By: fhenry <fhenry@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 17:26:16 by fhenry            #+#    #+#             */
-/*   Updated: 2016/11/15 14:16:26 by fhenry           ###   ########.fr       */
+/*   Updated: 2016/11/18 18:38:04 by fhenry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
 
-char			**expand_tab_c(char **src, char *string)
+static int	len_tab(char **tab)
 {
-	int			i;
-	int			len;
-	char		**dst;
+	int		i;
 
-	len = 0;
-	while (src[len])
-		len++;
-	if (!(dst = (char **)ft_memalloc(sizeof(char *) * len)))
-		exit(-1);
+	i = 0;
+	while (tab[i])
+		i++;
+	return (i);
+}
+
+char		**expand_tab_c(char **src, char *string)
+{
+	char	**dst;
+	int		len;
+	int		i;
+
+	dst = NULL;
 	i = -1;
-	while (++i < len)
+	if (src)
 	{
-		dst[i] = ft_strdup(src[i]);
-		ft_strdel(&src[i]);
+		len = len_tab(src);
+		dst = (char **)ft_memalloc(sizeof(char *) * (len + 2));
+		while (src[++i])
+		{
+			dst[i] = ft_strdup(src[i]);
+			ft_strdel(&src[i]);
+		}
+		free(src);
+		dst[i] = ft_strdup(string);
 	}
-	free(src);
-	dst[i] = ft_strdup(string);
+	else
+	{
+		if (!(dst = (char **)ft_memalloc(sizeof(char *) * 2)))
+			exit(-1);
+		dst[0] = ft_strdup(string);
+	}
 	return (dst);
 }
