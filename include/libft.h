@@ -6,7 +6,7 @@
 /*   By: fhenry <fhenry@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/14 17:04:30 by fhenry            #+#    #+#             */
-/*   Updated: 2016/11/19 15:19:38 by fhenry           ###   ########.fr       */
+/*   Updated: 2018/09/08 19:52:30 by fhenry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,6 +116,8 @@ typedef struct		s_data
 void				ft_free_tab(char **tab);
 char				**expand_tab_c(char **src, char *string);
 int					*expand_tab_i(int *src, int old_len, int value);
+/*		print .usage file which should be in the project folder		*/
+void				usage();
 
 /*
 **					FT_PRINTF

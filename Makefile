@@ -6,7 +6,7 @@
 #    By: fhenry <fhenry@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/05/16 06:45:34 by fhenry            #+#    #+#              #
-#    Updated: 2016/11/18 16:40:08 by fhenry           ###   ########.fr        #
+#    Updated: 2018/09/08 19:53:19 by fhenry           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,7 @@ SRC_NAME =	add_c_to_string.c \
 			del_c_to_string.c \
 			expand_tab_i.c \
 			expand_tab_c.c \
+			usage.c \
 			fill_with_c.c \
 			ft_atoi.c \
 			ft_bzero.c \
