@@ -46,7 +46,7 @@ static void			get_option(t_data *data)
 
 void				get_struct_part1(char *format, t_data *data, int index)
 {
-	init_struct(data);
+	init_struct_printf(data);
 	get_path(format, data, index);
 	get_type(data);
 	get_option(data);

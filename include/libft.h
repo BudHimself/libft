@@ -156,7 +156,7 @@ char				*ft_fill_wstr(char *p, unsigned char byte, unsigned int c);
 int					ft_islower(int c);
 size_t				ft_wstrlen(wchar_t *s);
 char				*ft_strjoin_free(char *s1, char *s2, int free_malloc);
-void				init_struct(t_data *data);
+void				init_struct_printf(t_data *data);
 char				*ft_itoa_base_oux(long long value, int base);
 void				ft_strdel(char **as);
 void				ft_memdel(void **ap);

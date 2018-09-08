@@ -113,7 +113,7 @@ SRC_NAME =	add_c_to_string.c \
 			get_sign.c \
 			get_struct_part1.c \
 			get_struct_part2.c \
-			init_struct.c \
+			init_struct_printf.c \
 			len_arg_max.c \
 			preci_max.c \
 			printf.c \
