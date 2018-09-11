@@ -6,7 +6,7 @@
 /*   By: fhenry <fhenry@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/14 17:04:30 by fhenry            #+#    #+#             */
-/*   Updated: 2018/09/08 19:52:30 by fhenry           ###   ########.fr       */
+/*   Updated: 2018/09/11 22:01:44 by fhenry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,6 +118,7 @@ char				**expand_tab_c(char **src, char *string);
 int					*expand_tab_i(int *src, int old_len, int value);
 /*		print .usage file which should be in the project folder		*/
 void				usage();
+int					ft_tab_len(char** tab);
 
 /*
 **					FT_PRINTF

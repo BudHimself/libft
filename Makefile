@@ -6,7 +6,7 @@
 #    By: fhenry <fhenry@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/05/16 06:45:34 by fhenry            #+#    #+#              #
-#    Updated: 2018/09/08 19:53:19 by fhenry           ###   ########.fr        #
+#    Updated: 2018/09/11 22:01:14 by fhenry           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -106,6 +106,7 @@ SRC_NAME =	add_c_to_string.c \
 			ft_strstr.c \
 			ft_strsub.c \
 			ft_strtrim.c \
+			ft_tab_len.c \
 			ft_tolower.c \
 			ft_toupper.c \
 			ft_ull_itoa_base.c \
